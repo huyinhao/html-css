@@ -11,10 +11,15 @@
     <div class="login">
         <h1>login</h1>
         <form class="" action="index.html" method="post">
-            <input type="text" name="user" class="user_input" autocomplete="off">
-            <label for="username" class="user_lable">username</label>
-            <input type="password" name="" class="pass_input">
-            <label for="password" class="pass_lable">password</label>
+            <div class="">
+                <input type="text" name="user" class="user_input input"
+                autocomplete="off" required="">
+                <label class="user_lable">username</label>
+            </div>
+            <div class="">
+                <input type="password" name="" class="pass_input input" required="">
+                <label class="pass_lable">password</label>
+            </div>
             <input type="submit" name="" value="submit" class="submit">
         </form>
     </div>
