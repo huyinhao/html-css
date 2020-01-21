@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    text-align: center;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bb{
+    margin-left: 50px;
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+    background: url('https://www.canva.cn/learn/wp-content/uploads/sites/17/2019/09/Snipaste_2019-09-24_15-21-59.png');
+    background-size: cover;
+    /* background-position: -8px -30px; */
+    background-position: center;
+    background-origin: border-box;
+    border-radius: 50%;
+    transform:scale(0,0) rotate(0deg);
+}
+
+p{
+    width: 160px;
+    height: 160px;
+    background-image: url('https://static.runoob.com/images/demo/demo2.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    transition: 1s;
+    transform: scale(1,1) rotate(0deg);
+    border: 20px solid rgba(255, 255, 255, 0.5);
+    background-origin: border-box;
+}
+
+.bb .box1{
+    background-image: url('http://img.1ppt.com/uploads/allimg/1905/1_190517213046_1.JPG');
+    background-position: 50px 0;
+}
+
+.bb p{
+    background-image: url('http://images.xuejuzi.cn/1811/1_181107154050_1.jpg');
+    background-position: center;
+}
+
+.box:hover p{
+    transform: scale(0,0) rotate(360deg);
+}
+
+.box:hover .box1{
+    transform:scale(1,1) rotate(360deg);
+}
+
+.bb:hover p{
+    transform: scale(2,2) rotate(360deg);
+    opacity: 0;
+}
