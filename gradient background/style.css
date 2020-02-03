@@ -4,19 +4,22 @@
 }
 
 body{
-    background-image: linear-gradient(125deg,#2c3e50,#fab1a0,#1abc9c,#e67e22,#8e44ad);
-    background-size: 500%;
-    animation: begin_animation 15s infinite;
+
 }
 
 .text{
+    width: 500px;
+    height: 200px;
     color: white;
     font-size: 22px;
     font-weight: 700;
-    margin:350px 0;
+    margin:100px auto;
     text-align: center;
     text-transform: uppercase;
-    animation: begin_ani 15s infinite;
+    background-image: linear-gradient(125deg,#2c3e50,#fab1a0,#1abc9c,#e67e22,#8e44ad);
+    background-size: 500%;
+    animation: begin_animation 15s infinite;
+    line-height: 200px;
 }
 
 @keyframes begin_animation {
